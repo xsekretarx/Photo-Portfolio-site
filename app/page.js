@@ -5,7 +5,6 @@ import { useState } from 'react'
 export default function Home() {
   const [lightboxImage, setLightboxImage] = useState(null)
 
-  // Replace these URLs with your actual photos
   const photos = [
     { id: 1, url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200', alt: 'Photo 1' },
     { id: 2, url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200', alt: 'Photo 2' },
@@ -23,15 +22,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      {/* Header - Billy Dinh style */}
       <header className="fixed top-0 w-full bg-white z-50 border-b border-gray-200">
         <nav className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
-          {/* Left - Your name (larger like Billy Dinh) */}
           <a href="#projects" className="text-2xl font-light tracking-wide hover:opacity-50 transition-opacity">
             Denis Mikhin
           </a>
 
-          {/* Right - Navigation with proper spacing */}
           <div className="flex items-center gap-10 text-sm font-light">
             <a href="#projects" className="hover:opacity-50 transition-opacity">
               projects
@@ -61,7 +57,6 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Main Grid - Centered with gaps */}
       <main id="projects" className="pt-32 pb-20">
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -82,7 +77,6 @@ export default function Home() {
         </div>
       </main>
 
-      {/* About Section */}
       <section id="about" className="py-32 border-t border-gray-200">
         <div className="max-w-3xl mx-auto px-8">
           <h2 className="text-3xl font-light mb-8 tracking-wide">About</h2>
@@ -99,7 +93,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-32 border-t border-gray-200">
         <div className="max-w-3xl mx-auto px-8">
           <h2 className="text-3xl font-light mb-8 tracking-wide">Contact</h2>
@@ -123,14 +116,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="border-t border-gray-200 py-8">
         <div className="max-w-7xl mx-auto px-8 text-center text-sm text-gray-500 font-light">
           <p>© 2025 Denis Mikhin</p>
         </div>
       </footer>
 
-      {/* Lightbox */}
       {lightboxImage && (
         <div 
           className="fixed inset-0 bg-white z-50 flex items-center justify-center p-8 cursor-pointer"
