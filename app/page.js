@@ -26,7 +26,7 @@ export default function Home() {
       {/* Header - Billy Dinh style: super minimal */}
       <header className="fixed top-0 w-full bg-white z-50 border-b border-gray-200">
         <nav className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-          {/* Left - Your name */}
+          {Denis Mikhin}
           <a href="#projects" className="text-xl font-normal tracking-wide hover:opacity-50 transition-opacity">
             Your Name
           </a>
@@ -38,13 +38,13 @@ export default function Home() {
             </a>
             <a href="#about" className="hover:opacity-50 transition-opacity">
               about
-            </a>
+            </a> 
             <a href="#contact" className="hover:opacity-50 transition-opacity">
               contact
             </a>
             <span className="text-gray-300">|</span>
             <a 
-              href="https://instagram.com/yourname" 
+              href="https://instagram.com/sekretarxx" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-50 transition-opacity"
