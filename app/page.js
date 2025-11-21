@@ -23,17 +23,17 @@ const photos = [
 
 return (
 <div className="min-h-screen bg-white text-black">
-{/* Header - Billy Dinh style: super minimal */}
+{/* Header - Billy Dinh style */}
 <header className="fixed top-0 w-full bg-white z-50 border-b border-gray-200">
-<nav className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-{/* Left - Your name */}
-<a href="#projects" className="text-xl font-normal tracking-wide hover:opacity-50 transition-opacity">
-Your Name
+<nav className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+{/* Left - Your name (larger like Billy Dinh) */}
+<a href="#projects" className="text-2xl font-light tracking-wide hover:opacity-50 transition-opacity">
+Denis Mikhin
 </a>
 
 ```
-      {/* Right - Navigation */}
-      <div className="flex items-center gap-8 text-sm">
+      {/* Right - Navigation with proper spacing */}
+      <div className="flex items-center gap-10 text-sm font-light">
         <a href="#projects" className="hover:opacity-50 transition-opacity">
           projects
         </a>
@@ -45,7 +45,7 @@ Your Name
         </a>
         <span className="text-gray-300">|</span>
         <a 
-          href="https://instagram.com/yourname" 
+          href="https://instagram.com/sekretarxx" 
           target="_blank" 
           rel="noopener noreferrer"
           className="hover:opacity-50 transition-opacity"
@@ -62,10 +62,10 @@ Your Name
     </nav>
   </header>
 
-  {/* Main Grid - Billy Dinh style: clean photo grid */}
+  {/* Main Grid - Centered with gaps */}
   <main id="projects" className="pt-32 pb-20">
-    <div className="max-w-7xl mx-auto px-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="max-w-6xl mx-auto px-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {photos.map((photo) => (
           <div 
             key={photo.id}
@@ -85,9 +85,9 @@ Your Name
 
   {/* About Section */}
   <section id="about" className="py-32 border-t border-gray-200">
-    <div className="max-w-3xl mx-auto px-6">
-      <h2 className="text-3xl font-normal mb-8 tracking-wide">About</h2>
-      <div className="space-y-4 text-gray-700 leading-relaxed">
+    <div className="max-w-3xl mx-auto px-8">
+      <h2 className="text-3xl font-light mb-8 tracking-wide">About</h2>
+      <div className="space-y-4 text-gray-700 leading-relaxed font-light">
         <p>
           Write about yourself here. Your photography style, what inspires you, 
           where you're based.
@@ -102,9 +102,9 @@ Your Name
 
   {/* Contact Section */}
   <section id="contact" className="py-32 border-t border-gray-200">
-    <div className="max-w-3xl mx-auto px-6">
-      <h2 className="text-3xl font-normal mb-8 tracking-wide">Contact</h2>
-      <div className="space-y-3 text-gray-700">
+    <div className="max-w-3xl mx-auto px-8">
+      <h2 className="text-3xl font-light mb-8 tracking-wide">Contact</h2>
+      <div className="space-y-3 text-gray-700 font-light">
         <p>
           <a href="mailto:your@email.com" className="hover:opacity-50 transition-opacity">
             your@email.com
@@ -112,12 +112,12 @@ Your Name
         </p>
         <p>
           <a 
-            href="https://instagram.com/yourname" 
+            href="https://instagram.com/sekretarxx" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:opacity-50 transition-opacity"
           >
-            @yourname
+            @sekretarxx
           </a>
         </p>
       </div>
@@ -126,19 +126,19 @@ Your Name
 
   {/* Footer */}
   <footer className="border-t border-gray-200 py-8">
-    <div className="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
-      <p>© 2025 Your Name</p>
+    <div className="max-w-7xl mx-auto px-8 text-center text-sm text-gray-500 font-light">
+      <p>© 2025 Denis Mikhin</p>
     </div>
   </footer>
 
-  {/* Lightbox - Billy Dinh style: minimal overlay */}
+  {/* Lightbox */}
   {lightboxImage && (
     <div 
       className="fixed inset-0 bg-white z-50 flex items-center justify-center p-8 cursor-pointer"
       onClick={() => setLightboxImage(null)}
     >
       <button 
-        className="absolute top-8 right-8 text-black text-3xl hover:opacity-50 transition-opacity"
+        className="absolute top-8 right-8 text-black text-3xl hover:opacity-50 transition-opacity font-light"
         onClick={() => setLightboxImage(null)}
       >
         ×
