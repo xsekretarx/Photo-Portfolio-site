@@ -1,7 +1,5 @@
 "use client"
 
-/* eslint-disable */
-// @ts-nocheck
 import { useState } from "react";
 import Link from "next/link";
 
@@ -9,21 +7,17 @@ const Home = () => {
   const [lightboxImage, setLightboxImage] = useState(null);
 
   const photos = [
-    { 
-      id: 1, 
-      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752646/DSC00650_mlwb3z.jpg", 
-      alt: "Photo 1"
-    },
-    { 
-      id: 2, 
-      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752423/DSC03191_ti9mej.jpg", 
-      alt: "Photo 2"
-    },
-    { 
-      id: 3, 
-      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752422/DSC02733_zpdzxl.jpg", 
-      alt: "Photo 3"
-    },
+    { id: 1, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810623/DSC06275_hjpi89.jpg", alt: "Photo 1" },
+    { id: 2, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810672/DSCF9245_uanvzl.jpg", alt: "Photo 2" },
+    { id: 3, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810678/R0010214_izk1fq.jpg", alt: "Photo 3" },
+    { id: 4, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752423/DSC03191_ti9mej.jpg", alt: "Photo 4" },
+    { id: 5, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810674/DSC01522_p4b59x.jpg", alt: "Photo 5" },
+    { id: 6, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810629/DSC00041_vdqzhj.jpg", alt: "Photo 6" },
+    { id: 7, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752422/DSC02733_zpdzxl.jpg", alt: "Photo 7" },
+    { id: 8, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810684/DSC07440_qkkiwr.jpg", alt: "Photo 8" },
+    { id: 9, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810687/R0003364_ng9pbs.jpg", alt: "Photo 9" },
+    { id: 10, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810629/R0008755_ho41dq.jpg", alt: "Photo 10" },
+    { id: 11, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810623/DSC07970_hbmu66.jpg", alt: "Photo 11" },
   ];
 
   return (
