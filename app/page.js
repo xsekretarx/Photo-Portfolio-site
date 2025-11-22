@@ -93,7 +93,7 @@ Denis Mikhin
           Street photographer based in Sweden, Stockholm.
         </p>
         <p>
-          
+          <3
         </p>
       </div>
     </div>
