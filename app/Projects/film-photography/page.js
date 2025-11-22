@@ -1,7 +1,5 @@
 "use client"
 
-/* eslint-disable */
-// @ts-nocheck
 import { useState } from "react";
 import Link from "next/link";
 
@@ -9,21 +7,11 @@ const FilmPhotographyProject = () => {
   const [lightboxImage, setLightboxImage] = useState(null);
 
   const photos = [
-    { 
-      id: 1, 
-      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752646/DSC00650_mlwb3z.jpg", 
-      alt: "Film Photo 1"
-    },
-    { 
-      id: 2, 
-      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752423/DSC03191_ti9mej.jpg", 
-      alt: "Film Photo 2"
-    },
-    { 
-      id: 3, 
-      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752422/DSC02733_zpdzxl.jpg", 
-      alt: "Film Photo 3"
-    },
+    { id: 1, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810623/DSC06275_hjpi89.jpg", alt: "Film Photo 1" },
+    { id: 2, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810672/DSCF9245_uanvzl.jpg", alt: "Film Photo 2" },
+    { id: 3, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810678/R0010214_izk1fq.jpg", alt: "Film Photo 3" },
+    { id: 4, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752423/DSC03191_ti9mej.jpg", alt: "Film Photo 4" },
+    { id: 5, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810674/DSC01522_p4b59x.jpg", alt: "Film Photo 5" },
   ];
 
   return (
@@ -118,21 +106,4 @@ const FilmPhotographyProject = () => {
           onClick={() => setLightboxImage(null)}
         >
           <button 
-            className="absolute top-8 right-8 text-black text-3xl hover:opacity-50 transition-opacity font-light"
-            onClick={() => setLightboxImage(null)}
-          >
-            ×
-          </button>
-          <img
-            src={lightboxImage.url}
-            alt={lightboxImage.alt}
-            className="max-w-full max-h-full object-contain"
-            onClick={(e) => e.stopPropagation()}
-          />
-        </div>
-      )}
-    </div>
-  );
-};
-
-export default FilmPhotographyProject;
+            className="absolute top-8 right-8 text-black text-3xl hover:opacity-50​​​​​​​​​​​​​​​​
