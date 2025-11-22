@@ -1,3 +1,5 @@
+"use client"
+
 /* eslint-disable */
 // @ts-nocheck
 import Link from "next/link";
