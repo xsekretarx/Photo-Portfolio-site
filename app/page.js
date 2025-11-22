@@ -8,20 +8,56 @@ export default function Home() {
   const photos = [
     { 
       id: 1, 
-      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752646/DSC00650_mlwb3z.jpg", 
+      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810623/DSC06275_hjpi89.jpg", 
       alt: "Photo 1",
       orientation: "horizontal"
     },
     { 
       id: 2, 
-      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752423/DSC03191_ti9mej.jpg", 
+      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810672/DSCF9245_uanvzl.jpg", 
       alt: "Photo 2",
-      orientation: "vertical"
+      orientation: "horizontal"
     },
     { 
       id: 3, 
-      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752422/DSC02733_zpdzxl.jpg", 
+      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810678/R0010214_izk1fq.jpg", 
       alt: "Photo 3",
+      orientation: "vertical"
+    },
+    { 
+      id: 4, 
+      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810629/DSC00041_vdqzhj.jpg", 
+      alt: "Photo 4",
+      orientation: "horizontal"
+    },
+    { 
+      id: 5, 
+      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810674/DSC01522_p4b59x.jpg", 
+      alt: "Photo 5",
+      orientation: "horizontal"
+    },
+    { 
+      id: 6, 
+      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810684/DSC07440_qkkiwr.jpg", 
+      alt: "Photo 6",
+      orientation: "horizontal"
+    },
+    { 
+      id: 7, 
+      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810677/R0002706_djwyy1.jpg", 
+      alt: "Photo 1",
+      orientation: "horizontal"
+    },
+    { 
+      id: 8, 
+      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752422/DSC02733_zpdzxl.jpg", 
+      alt: "Photo 8",
+      orientation: "vertical"
+    },
+    { 
+      id: 9, 
+      url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810687/R0003364_ng9pbs.jpg", 
+      alt: "Photo 9",
       orientation: "vertical"
     },
   ];
