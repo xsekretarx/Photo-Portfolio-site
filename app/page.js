@@ -54,7 +54,7 @@ export default function Home() {
               instagram
             </a>
             <a 
-              href="mailto:your@email.com"
+              href="mailto:denismikhinphoto@gmail.com"
               className="hover:opacity-50 transition-opacity"
             >
               email
@@ -68,13 +68,14 @@ export default function Home() {
           {photos.map((photo) => (
             <div 
               key={photo.id}
-              className="w-full cursor-pointer group"
+              className="w-full cursor-pointer group flex justify-center items-center"
               onClick={() => setLightboxImage(photo)}
             >
               <img
                 src={photo.url}
                 alt={photo.alt}
-                className="w-full h-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+                style={{ maxHeight: "85vh" }}
+                className="w-auto max-w-full h-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
               />
             </div>
           ))}
@@ -88,10 +89,6 @@ export default function Home() {
             <p>
               Street photographer based in Sweden, Stockholm.
             </p>
-            <p>
-              Write more about yourself here. Your photography style, what inspires you, 
-              your approach to capturing moments on the streets.
-            </p>
           </div>
         </div>
       </section>
@@ -101,8 +98,8 @@ export default function Home() {
           <h2 className="text-3xl font-light mb-8 tracking-wide">Contact</h2>
           <div className="space-y-3 text-gray-700 font-light">
             <p>
-              <a href="mailto:your@email.com" className="hover:opacity-50 transition-opacity">
-                your@email.com
+              <a href="mailto:denismikhinphoto@gmail.com" className="hover:opacity-50 transition-opacity">
+                denismikhinphoto@gmail.com
               </a>
             </p>
             <p>
