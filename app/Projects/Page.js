@@ -1,7 +1,5 @@
 "use client"
 
-/* eslint-disable */
-// @ts-nocheck
 import Link from "next/link";
 
 const ProjectsPage = () => {
@@ -10,14 +8,14 @@ const ProjectsPage = () => {
       id: "film-photography",
       title: "Film Photography",
       description: "Analog moments captured on 35mm film",
-      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752646/DSC00650_mlwb3z.jpg",
+      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810623/DSC06275_hjpi89.jpg",
       year: "2024"
     },
     {
       id: "street-series",
       title: "Street Series",
       description: "Life on the streets of Stockholm",
-      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763752423/DSC03191_ti9mej.jpg",
+      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810672/DSCF9245_uanvzl.jpg",
       year: "2024"
     },
   ];
