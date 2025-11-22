@@ -50,7 +50,7 @@ const MarrakechProject = () => {
       <div className="pb-12">
         <div className="max-w-7xl mx-auto px-8">
           <h1 className="text-4xl font-light mb-4 tracking-wide">Marrakech 2025</h1>
-          <p className="text-gray-600 font-light max-w-2xl">Colors and life of Moroccan streets. A journey through the vibrant markets, ancient medinas, and sun-soaked alleys of Marrakech.</p>
+          <p className="text-gray-600 font-light max-w-2xl">A glimpse into Marrakech streets.</p>
         </div>
       </div>
       <main className="pb-20">
