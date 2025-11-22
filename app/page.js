@@ -64,23 +64,20 @@ export default function Home() {
       </header>
 
       <main id="projects" className="pt-32 pb-20">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="flex flex-col gap-8">
-            {photos.map((photo) => (
-              <div 
-                key={photo.id}
-                className="relative w-full flex items-center justify-center cursor-pointer group"
-                style={{ minHeight: "60vh", maxHeight: "80vh" }}
-                onClick={() => setLightboxImage(photo)}
-              >
-                <img
-                  src={photo.url}
-                  alt={photo.alt}
-                  className="max-w-full max-h-full object-contain transition-opacity duration-300 group-hover:opacity-90"
-                />
-              </div>
-            ))}
-          </div>
+        <div className="max-w-7xl mx-auto px-8 space-y-12">
+          {photos.map((photo) => (
+            <div 
+              key={photo.id}
+              className="w-full cursor-pointer group"
+              onClick={() => setLightboxImage(photo)}
+            >
+              <img
+                src={photo.url}
+                alt={photo.alt}
+                className="w-full h-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+              />
+            </div>
+          ))}
         </div>
       </main>
 
@@ -92,7 +89,8 @@ export default function Home() {
               Street photographer based in Sweden, Stockholm.
             </p>
             <p>
-              xxx
+              Write more about yourself here. Your photography style, what inspires you, 
+              your approach to capturing moments on the streets.
             </p>
           </div>
         </div>
