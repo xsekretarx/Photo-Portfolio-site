@@ -5,18 +5,11 @@ import Link from "next/link";
 const ProjectsPage = () => {
   const projects = [
     {
-      id: "film-photography",
-      title: "Film Photography",
-      description: "Analog moments captured on 35mm film",
-      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810623/DSC06275_hjpi89.jpg",
-      year: "2024"
-    },
-    {
-      id: "street-series",
-      title: "Street Series",
-      description: "Life on the streets of Stockholm",
-      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763810672/DSCF9245_uanvzl.jpg",
-      year: "2024"
+      id: "marrakech-2025",
+      title: "Marrakech 2025",
+      description: "Colors and life of Moroccan streets",
+      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832588/DSC07167_glutxb.jpg",
+      year: "2025"
     },
   ];
 
