@@ -11,6 +11,13 @@ const ProjectsPage = () => {
       coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832588/DSC07167_glutxb.jpg",
       year: "2025"
     },
+    {
+      id: "kyoto",
+      title: "Kyoto",
+      description: "Exploring the streets of Kyoto",
+      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1764620339/DSC04332_cetoyd.jpg",
+      year: "2024"
+    },
   ];
 
   return (
