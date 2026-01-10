@@ -3,28 +3,16 @@
 import { useState } from "react";
 import Link from "next/link";
 
+// Генерируем массив из 22 элементов автоматически
+// Это создает объекты для файлов от 0.jpg до 21.jpg
+const photos = Array.from({ length: 22 }, (_, i) => ({
+  id: i,
+  url: `/photos/marrakech/${i}.jpg`,
+  alt: `Marrakech ${i + 1}` // Alt text будет "Marrakech 1", "Marrakech 2" и т.д.
+}));
+
 const MarrakechProject = () => {
   const [lightboxImage, setLightboxImage] = useState(null);
-  const photos = [
-    { id: 1, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832588/DSC07167_glutxb.jpg", alt: "Marrakech 1" },
-    { id: 2, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832583/DSC07998_vfsir0.jpg", alt: "Marrakech 2" },
-    { id: 3, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832590/DSC08031_nvt41y.jpg", alt: "Marrakech 3" },
-    { id: 4, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832590/DSC07730_njuxba.jpg", alt: "Marrakech 4" },
-    { id: 5, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832592/R0018759_muodtw.jpg", alt: "Marrakech 5" },
-    { id: 6, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832698/R0018821_agoqkz.jpg", alt: "Marrakech 6" },
-    { id: 7, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832520/R0018848_dmppfh.jpg", alt: "Marrakech 7" },
-    { id: 8, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832507/DSC08673_agddmi.jpg", alt: "Marrakech 8" },
-    { id: 9, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832506/DSC08575_za3yx4.jpg", alt: "Marrakech 9" },
-    { id: 10, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832506/DSC08676_kdg0zd.jpg", alt: "Marrakech 10" },
-    { id: 11, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832586/DSC07991_aa6enf.jpg", alt: "Marrakech 11" },
-    { id: 12, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832509/DSC08519_noirst.jpg", alt: "Marrakech 12" },
-    { id: 13, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832584/DSC08079_cizqw8.jpg", alt: "Marrakech 13" },
-    { id: 14, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832508/R0018877_hsaq2j.jpg", alt: "Marrakech 14" },
-    { id: 15, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832513/DSC08783_no7obo.jpg", alt: "Marrakech 15" },
-    { id: 16, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832511/DSC08583_nua5zu.jpg", alt: "Marrakech 16" },
-    { id: 17, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832592/DSC08194_ahk25k.jpg", alt: "Marrakech 17" },
-    { id: 18, url: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832514/DSC08500_mi59tl.jpg", alt: "Marrakech 18" },
-  ];
 
   return (
     <div className="min-h-screen bg-white text-black">
@@ -42,33 +30,62 @@ const MarrakechProject = () => {
           </div>
         </nav>
       </header>
+      
       <div className="pt-24 pb-8">
         <div className="max-w-7xl mx-auto px-8">
           <Link href="/projects" className="text-sm font-light hover:opacity-50 transition-opacity">← Back to Projects</Link>
         </div>
       </div>
+
       <div className="pb-12">
         <div className="max-w-7xl mx-auto px-8">
           <h1 className="text-4xl font-light mb-4 tracking-wide">Marrakech 2025</h1>
           <p className="text-gray-600 font-light max-w-2xl">A glimpse into Marrakech streets.</p>
         </div>
       </div>
+
       <main className="pb-20">
         <div className="max-w-7xl mx-auto px-8 space-y-12">
           {photos.map((photo) => (
-            <div key={photo.id} className="w-full cursor-pointer group flex justify-center items-center" onClick={() => setLightboxImage(photo)}>
-              <img src={photo.url} alt={photo.alt} style={{ maxHeight: "85vh" }} className="w-auto max-w-full h-auto object-contain transition-opacity duration-300 group-hover:opacity-90" />
+            <div 
+                key={photo.id} 
+                className="w-full cursor-pointer group flex justify-center items-center" 
+                onClick={() => setLightboxImage(photo)}
+            >
+              <img 
+                src={photo.url} 
+                alt={photo.alt} 
+                style={{ maxHeight: "85vh" }} 
+                className="w-auto max-w-full h-auto object-contain transition-opacity duration-300 group-hover:opacity-90" 
+              />
             </div>
           ))}
         </div>
       </main>
+
       <footer className="border-t border-gray-200 py-8">
-        <div className="max-w-7xl mx-auto px-8 text-center text-sm text-gray-500 font-light"><p>© 2025 Denis Mikhin</p></div>
+        <div className="max-w-7xl mx-auto px-8 text-center text-sm text-gray-500 font-light">
+            <p>© 2025 Denis Mikhin</p>
+        </div>
       </footer>
+
       {lightboxImage && (
-        <div className="fixed inset-0 bg-white z-50 flex items-center justify-center p-8 cursor-pointer" onClick={() => setLightboxImage(null)}>
-          <button className="absolute top-8 right-8 text-black text-3xl hover:opacity-50 transition-opacity font-light" onClick={() => setLightboxImage(null)}>×</button>
-          <img src={lightboxImage.url} alt={lightboxImage.alt} className="max-w-full max-h-full object-contain" onClick={(e) => e.stopPropagation()} />
+        <div 
+            className="fixed inset-0 bg-white z-50 flex items-center justify-center p-8 cursor-pointer" 
+            onClick={() => setLightboxImage(null)}
+        >
+          <button 
+            className="absolute top-8 right-8 text-black text-3xl hover:opacity-50 transition-opacity font-light" 
+            onClick={() => setLightboxImage(null)}
+          >
+            ×
+          </button>
+          <img 
+            src={lightboxImage.url} 
+            alt={lightboxImage.alt} 
+            className="max-w-full max-h-full object-contain" 
+            onClick={(e) => e.stopPropagation()} 
+          />
         </div>
       )}
     </div>

@@ -8,14 +8,14 @@ const ProjectsPage = () => {
       id: "marrakech-2025",
       title: "Marrakech 2025",
       description: "Colors and life of Moroccan streets",
-      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1763832588/DSC07167_glutxb.jpg",
+      coverImage: "/photos/marrakech/0.jpg",
       year: "2025"
     },
     {
       id: "kyoto",
       title: "Kyoto",
       description: "Exploring the streets of Kyoto",
-      coverImage: "https://res.cloudinary.com/dpbayfssp/image/upload/v1764620339/DSC04332_cetoyd.jpg",
+      coverImage: "/photos/kyoto/DSC04332.jpg",
       year: "2025"
     },
   ];
