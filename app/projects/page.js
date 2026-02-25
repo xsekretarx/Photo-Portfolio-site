@@ -4,21 +4,28 @@ import Link from "next/link";
 
 const ProjectsPage = () => {
   const projects = [
-    {
-      id: "marrakech-2025",
-      title: "Marrakech 2025",
-      description: "Colors and life of Moroccan streets",
-      coverImage: "/photos/marrakech/0.jpg",
-      year: "2025"
-    },
-    {
-      id: "kyoto",
-      title: "Kyoto",
-      description: "Exploring the streets of Kyoto",
-      coverImage: "/photos/kyoto/DSC04332.jpg",
-      year: "2025"
-    },
-  ];
+  {
+    id: "marrakech-2025",
+    title: "Marrakech 2025",
+    description: "Colors and life of Moroccan streets",
+    coverImage: "/photos/marrakech-2025/0.jpg",
+    year: "2025"
+  },
+  {
+    id: "kyoto",
+    title: "Kyoto",
+    description: "Exploring the streets of Kyoto",
+    coverImage: "/photos/kyoto/0.jpg",
+    year: "2025"
+  },
+  {
+    id: "phuket",
+    title: "Phuket",
+    description: "Tropical vibes and island life",
+    coverImage: "/photos/phuket/0.jpg",
+    year: "2026"
+  }
+];
 
   return (
     <div className="min-h-screen bg-white text-black">
