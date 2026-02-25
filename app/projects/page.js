@@ -1,31 +1,13 @@
 "use client"
 
 import Link from "next/link";
+import projectsData from "@/data/projects.json";
 
 const ProjectsPage = () => {
-  const projects = [
-  {
-    id: "marrakech-2025",
-    title: "Marrakech 2025",
-    description: "Colors and life of Moroccan streets",
-    coverImage: "/photos/marrakech-2025/0.jpg",
-    year: "2025"
-  },
-  {
-    id: "kyoto",
-    title: "Kyoto",
-    description: "Exploring the streets of Kyoto",
-    coverImage: "/photos/kyoto/0.jpg",
-    year: "2025"
-  },
-  {
-    id: "phuket",
-    title: "Phuket",
-    description: "Tropical vibes and island life",
-    coverImage: "/photos/phuket/0.jpg",
-    year: "2026"
-  }
-];
+  const projects = projectsData.projects.map(project => ({
+    ...project,
+    coverImage: `/photos/${project.id}/${project.coverImage}`
+  }));
 
   return (
     <div className="min-h-screen bg-white text-black">
