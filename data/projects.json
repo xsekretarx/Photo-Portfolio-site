@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": "marrakech-2025",
+      "title": "Marrakech 2025",
+      "description": "A glimpse into Marrakech streets.",
+      "year": "2025",
+      "cover": "0.jpg"
+    },
+    {
+      "id": "kyoto",
+      "title": "Kyoto",
+      "description": "Exploring the streets of Kyoto",
+      "year": "2025",
+      "cover": "0.jpg"
+    },
+    {
+      "id": "phuket",
+      "title": "Phuket",
+      "description": "Tropical vibes and island life",
+      "year": "2026",
+      "cover": "0.jpg"
+    }
+  ]
+}
