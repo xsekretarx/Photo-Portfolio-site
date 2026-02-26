@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link";
-import projectsData from "@/data/projects.json";
+import projectsData from "../../data/projects.json";
 
 const ProjectsPage = () => {
   const projects = projectsData.projects.map(project => ({
